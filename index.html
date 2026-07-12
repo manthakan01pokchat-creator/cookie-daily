@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cookie Daily</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div class="page">
+		<div class="header">
+			<a href="index.html" id="logo">
+    <img src="images/logocookie.png" alt="Cookie Daily Logo">
+</a>
+			<ul class="navigation">
+				<li id="link1" class="selected">
+					<a href="index.html">Home</a>
+				</li>
+				<li id="link2">
+					<a href="about.html">About</a>
+				</li>
+				<li id="link3">
+					<a href="cookies.html">Our Cookies</a>
+				</li>
+				<li id="link4">
+					<a href="blog.html">Blog</a>
+				</li>
+				<li id="link5">
+					<a href="locations.html">Store Locations</a>
+				</li>
+			</ul>
+		</div>
+		<script>
+	function recommendCookie() {
+		const name = document.getElementById("visitorName").value.trim();
+		const mood = document.getElementById("cookieMood").value;
+		const result = document.getElementById("cookie-result");
+
+		if (name === "") {
+			result.textContent = "Please enter your name first.";
+			return;
+		}
+
+		if (mood === "") {
+			result.textContent = "Please choose your mood.";
+			return;
+		}
+
+		let cookieName = "";
+
+		if (mood === "happy") {
+			cookieName = "a Strawberry Sprinkle Cookie";
+		} else if (mood === "relaxed") {
+			cookieName = "a warm Butter Cookie";
+		} else if (mood === "excited") {
+			cookieName = "a rich Brownie Cookie";
+		} else {
+			const cookies = [
+				"a Chocolate Chip Cookie",
+				"a Jam Cookie",
+				"a Heart Cookie",
+				"a S'mores Cookie"
+			];
+
+			const randomNumber = Math.floor(Math.random() * cookies.length);
+			cookieName = cookies[randomNumber];
+		}
+
+		result.textContent =
+			"Hello " + name + "! Cookie Daily recommends " + cookieName + " for you today.";
+	}
+</script>
+		<div class="body">
+		<div class="original-template-link">
+	Original Website Template:
+	<a href="https://freewebsitetemplates.com/preview/lollipops/index.html"
+	   target="_blank"
+	   rel="noopener noreferrer">
+		View Original Lollipops Template
+	</a>
+</div>
+<div id="welcome-message"></div>
+<script>
+	window.addEventListener("DOMContentLoaded", function () {
+		document.getElementById("welcome-message").textContent =
+			"Welcome to Cookie Daily! Freshly baked happiness is waiting for you.";
+	});
+</script>
+<div class="cookie-recommender">
+	<h2>Find Your Cookie</h2>
+
+	<label for="visitorName">Your name:</label>
+	<input type="text" id="visitorName" placeholder="Enter your name">
+
+	<label for="cookieMood">How do you feel today?</label>
+	<select id="cookieMood">
+		<option value="">Choose your mood</option>
+		<option value="happy">Happy</option>
+		<option value="relaxed">Relaxed</option>
+		<option value="excited">Excited</option>
+		<option value="surprise">Surprise me</option>
+	</select>
+
+	<button type="button" onclick="recommendCookie()">
+		Recommend My Cookie
+	</button>
+
+	<p id="cookie-result"></p>
+</div>
+			<div class="aside">
+				<p>
+	Freshly Baked Cookies Every Day!
+</p>
+
+<p>
+	Made with love, butter and premium chocolate.
+</p>
+			</div>
+			<div>
+				<div>
+					<h3>Welcome to Cookie Daily!</h3>
+
+<p>
+	Welcome to Cookie Daily, where every cookie is freshly baked with premium ingredients. From classic chocolate chip cookies to buttery butter cookies, we create delicious treats that bring happiness to every bite. Enjoy our homemade recipes, warm flavors, and sweet moments with every visit.
+</p>
+				</div>
+				<div>
+					<h4>Latest Cookie News</h4>
+
+<span>Posted July 2026</span>
+
+<a href="blog.html">
+How to Bake Perfect Chocolate Chip Cookies
+</a>
+
+<p>
+	Learn easy baking tips, discover new cookie flavors, and explore simple homemade recipes that everyone can enjoy.
+</p>
+				</div>
+			</div>
+			<ul>
+				<li>
+					-<a href="cookies.html"><img src="images/cookie1.png" alt=""></a>
+				</li>
+				<li>
+					<a href="cookies.html"><img src="images/cookie2.png" alt=""></a>
+				</li>
+				<li>
+					<a href="cookies.html"><img src="images/cookie3.png" alt=""></a>
+				</li>
+				<li>
+					<a href="cookies.html"><img src="images/cookie4.png" alt=""></a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+			<div class="connect">
+				<span>Follow Cookie Daily:</span> <a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a> <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a> <a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">google+</a>
+			</div>
+			<form action="about.html">
+				<label for="join">Join Our Cookie Club:</label>
+				<input type="text" id="join">
+				<input type="submit" id="submit" value="">
+			</form>
+			<p>
+				Copyright &#169; 2026 Cookie Daily.<br>
+Student ID: 25229062(84)  Name: Manthakan Tangpiriyathip <br>
+		</p>
+			<ul>
+				<li>
+					<a href="#">Privacy</a>
+				</li>
+				<li>
+					<a href="#">Terms and Conditions</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
